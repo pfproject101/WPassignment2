@@ -16,9 +16,9 @@ mongoose.connect(dbURI)
 // // add data to db
 // app.get('/addTeam', (req, res)=>{
 //     const Team = new team({
-//         name: 'The Foo Fighters',
-//         score:453542,
-//         games:25,
+//         name: 'Pentacore',
+//         score:243435,
+//         games:29,
 //         image: 'https://cdn.marvel.com/content/1x/avengersendgame_lob_crd_05.jpg'
 //     });
 //     Team.save()
