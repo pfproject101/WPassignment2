@@ -53,9 +53,9 @@ const Leaderboard = (props) => {
                 <div className="col-md-8">
                     <table className="table table-striped">
                         <thead>
-                            <tr>
+                            <tr style={{borderBottom:"solid 3px orange", borderTop:"solid 1px lightgrey" , borderLeft:"solid 1px lightgrey", borderRight:"solid 1px lightgrey"}}>
                             <th style = {{color: '#004e99'}} scope="col">RANK</th>
-                            <th className="d-flex align-items-center justify-content-start" style = {{color: '#004e99'}} scope="col">TEAM NAME</th>
+                            <th style = {{color: '#004e99'}} scope="col">TEAM NAME</th>
                             <th style = {{color: '#004e99'}} scope="col">TOTAL GAMES PLAYED</th>
                             <th style = {{color: '#004e99'}} scope="col">SCORE</th>
                             </tr>
@@ -64,7 +64,7 @@ const Leaderboard = (props) => {
                             {teams &&
                                 teams.map((team) => {
                                     return (
-                                        <tr key = {team._id}>
+                                        <tr style={{borderLeft:"solid 1px lightgrey", borderRight:"solid 1px lightgrey"}} key = {team._id}>
                                         <th scope="row">
                                             {team.rank== 1 && 
                                                 <svg 
